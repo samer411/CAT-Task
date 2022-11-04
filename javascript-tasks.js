@@ -11,7 +11,7 @@ function sum(min, max) {
   return result;
 }
 
-console.log(sum(9, 10));
+console.log(sum(1, 10));
 
 // ***************** Second Task *************************
 
@@ -26,4 +26,4 @@ function occurence(str) {
   });
   return result;
 }
-console.log(occurence("samer"));
+console.log(occurence("ssaammeerr"));

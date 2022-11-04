@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  text-align: center;
+}
+
+h3 {
+  color: #e64a19;
+  font-size: 20px;
+}
+p {
+  font-size: 18px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+/* Start Form */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+form {
+  font-family: sans-serif;
+  display: block;
+  width: 500px;
+  margin: 10px auto;
+}
+@media (max-width: 767px) {
+  form {
+    width: 100%;
+  }
+}
+form .input_field {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  form .input_field {
+    flex-direction: column;
+  }
+}
+form .input_field label {
+  width: 300px;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 100;
+}
+@media (max-width: 767px) {
+  form .input_field label {
+    width: 100%;
+    text-align: left;
+    margin: 10px 20px;
+  }
+}
+form .input_field input,
+form .input_field textarea {
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  padding: 8px 10px;
+  border: 1px solid #d5dbd9;
+}
+
+@media (max-width: 767px) {
+  form .input_field input,
+  form .input_field textarea {
+    width: 100%;
+  }
+}
+
+form .input_field .box {
+  width: 102%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  form .input_field .box {
+    width: 101%;
+  }
+}
+form .input_field .box input {
+  width: 200px;
+  margin-right: 10px;
+}
+form .input_field .box select {
+  font-size: 10px;
+  padding: 5px;
+  padding-right: 10px;
+  color: #222;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+form .radios {
+  width: 90%;
+  display: flex;
+  margin: 20px;
+}
+form .input_field .box .custom-select select option {
+  padding: 5px 10px;
+}
+form .input_field .comment {
+  margin-bottom: auto;
+  margin-top: 10px;
+}
+
+form .btn input {
+  width: 100px;
+  margin: 0 auto;
+  color: white;
+  background-color: #e64a19;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+form .btn input:hover {
+  background-color: lightgreen;
+  color: #000;
+}
+/*End Form  */
